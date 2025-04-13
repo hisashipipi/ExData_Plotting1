@@ -9,7 +9,7 @@ library(lubridate)
 library(dplyr)
 
 # 1. Read data ("household_power_consumption.txt" saved in the working directory)
-df <- read.table("household_power_consumption.txt", sep = ";", header = TRUE)
+df <- read.table("household_power_consumption.txt", sep = ";", header = TRUE, na.strings = "?")
 
 # 2. Subset data (2007-02-01 and 2007-02-02)
 # Transform Date to Date format first
